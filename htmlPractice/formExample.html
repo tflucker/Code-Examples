@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form Example</title>
+  <style>
+    ul.hobbies {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Form Example</h1>
+  <form action="#" method="post">
+    <label for="firstName">First Name: </label>
+    <input type="text" id="firstName" maxlength="25" />
+    <br />
+    <label for="lastName">Last Name: </label>
+    <input type="text" id="lastName" maxlength="25" />
+    <br />
+    <label for="jobName">Job: </label>
+    <input type="text" id="jobName" />
+    <br />
+    <label for="description">Description: </label>
+    <textarea id="description" rows="4" cols="50">Tell us about yourself.</textarea>
+    <br />
+    <label for="email">Email Address: </label>
+    <input type="email" id="email" />
+    <br />
+    <label for="hobbies">Hobbies: </label>
+    <ul id="hobbies" class="hobbies">
+      <li>
+        <input type="checkbox" id="music" value="Music" />
+        <label for="music">Music</label>
+      </li>
+      <li>
+        <input type="checkbox" id="videogames" value="Video Games" />
+        <label for="videogames">Video Games</label>
+      </li>
+      <li>
+        <input type="checkbox" id="tv" value="TV" />
+        <label for="tv">TV</label>
+      </li>
+      <li>
+        <input type="checkbox" id="reading" value="Reading" />
+        <label for="reading">Reading</label>
+      </li>
+      <li>
+        <input type="checkbox" id="hiking" value="Hiking" />
+        <label for="hiking">Hiking</label>
+      </li>
+      <li>
+        <input type="checkbox" id="woodworking" value="Woodworking" />
+        <label for="woodworking">Woodworking</label>
+      </li>
+      <li>
+        <input type="checkbox" id="cooking" value="cooking" />
+        <label for="cooking">Cooking</label>
+      </li>
+    </ul>
+    <br />
+    <label for="colorPicker">Favorite color</label>
+    <input type="color" id="colorPicker" />
+    <br />
+    <label for="resume">Resume File: </label>
+    <input type="file" id="resume" />
+    <br />
+    <br />
+    <input type="submit" value="Submit Form" />
+  </form>
+  <br />
+  <p>
+    Version 1.0
+  </p>
+  <p>
+    The pupose of this document is to show a basic form with little to no formatting. It showcases multiple
+    input types, and currently does not submit any data.
+  </p>
+</body>
+
+</html>

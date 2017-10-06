@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Form in Table Example</title>
+  <style>
+    ul.hobbies {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      list-style-position: inside;
+    }
+
+    td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Example form</h1>
+  <form action="#" method="post" id="exampleForm">
+    <table>
+      <tr>
+        <td><label for="firstName">First Name: </label></td>
+        <td><input type="text" id="firstName" maxlength="25" required/>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="lastName">Last Name: </label></td>
+        <td><input type="text" id="lastName" maxlength="25" required/></td>
+      </tr>
+      <tr>
+        <td><label for="jobName">Job: </label></td>
+        <td><input type="text" id="jobName" required/></td>
+      </tr>
+      <tr>
+        <td><label for="description">Description: </label></td>
+        <td><textarea id="description" rows="4" cols="50" maxlength="500">Tell us about yourself.</textarea></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email Address: </label></td>
+        <td><input type="email" id="email" required/></td>
+      </tr>
+      <tr>
+        <td><label for="hobbies">Hobbies: </label></td>
+        <td>
+          <ul id="hobbies" class="hobbies">
+            <li>
+              <input type="checkbox" id="music" value="Music" />
+              <label for="music">Music</label>
+            </li>
+            <li>
+              <input type="checkbox" id="videogames" value="Video Games" />
+              <label for="videogames">Video Games</label>
+            </li>
+            <li>
+              <input type="checkbox" id="tv" value="TV" />
+              <label for="tv">TV</label>
+            </li>
+            <li>
+              <input type="checkbox" id="reading" value="Reading" />
+              <label for="reading">Reading</label>
+            </li>
+            <li>
+              <input type="checkbox" id="hiking" value="Hiking" />
+              <label for="hiking">Hiking</label>
+            </li>
+            <li>
+              <input type="checkbox" id="woodworking" value="Woodworking" />
+              <label for="woodworking">Woodworking</label>
+            </li>
+            <li>
+              <input type="checkbox" id="cooking" value="cooking" />
+              <label for="cooking">Cooking</label>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="colorPicker">Favorite color</label></td>
+        <td><input type="color" id="colorPicker" /></td>
+      </tr>
+      <tr>
+        <td><label for="favoriteAlcohol">Favorite Alcohol: </label></td>
+        <td><select form="exampleForm" id="favoriteAlcohol" required>
+          <option value="" selected>Please select an option</option>
+          <option value="None">None</option>
+          <option value="Beer">Beer</option>
+          <option value="Wine">Wine</option>
+          <option value="Cider">Cider</option>
+          <option value="Rum">Rum</option>
+          <option value="Tequila">Tequila</option>
+          <option value="Vodka">Vodka</option>
+          <option value="Whiskey">Whiskey</option>
+          <option value="Gin">Gin</option>
+          <option value="Scotch">Scotch</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td><label for="resume">Resume File: </label></td>
+        <td><input type="file" id="resume" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center;"><input class="submitBtn" type="submit" value="Submit Form" /></td>
+      </tr>
+    </table>
+  </form>
+  <p>
+    Version 1.0
+  </p>
+  <p>
+    The purpose of this file is to combine the tableExample and formExample into a single class. It also
+    showcases some of the different inputs and some basic required and pattern validations.
+  </p>
+</body>
+
+</html>

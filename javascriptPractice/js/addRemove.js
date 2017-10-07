@@ -6,9 +6,9 @@
     var btnContainer = document.getElementById('btnContainer');
     btn.appendChild(text);
     btn.id = 'newBtn' + counter;
-    btn.class= 'newButton';
+    btn.classList.add('newButton');
+    btn.style.display = 'block';
     btnContainer.appendChild(btn);
-    btnContainer.appendChild(document.createElement('br'));
     counter++;
   }
 

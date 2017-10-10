@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Count Down Example</title>
+  <script src="../js/countdown.js"></script>
+
+  <style>
+    #countdown {
+      text-align: center;
+      font-size: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="dateInput">
+    <h2>Please enter a date.</h2>
+    <label for="date">Date</label>
+    <input type="date" id="date" onchange="createCountDown()" />
+  </div>
+
+  <div id="results">
+    <div id="countdown">
+    </div>
+
+  </div>
+
+</body>
+
+</html>

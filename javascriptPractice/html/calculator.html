@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Calculator</title>
+<style>
+#comments{
+  top: 40%;
+  left: 55%;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+
+</head>
+
+<div id="container">
+  <h2 style="text-align: center;">Calculator</h2>
+  <br />
+  <div style="text-align:center;">
+    <label for="window">Calculate: </label>
+    <input type="text" id="window" value="" />
+  </div>
+  <div style="text-align:center;">
+    <label for="result">Result: </label>
+    <input type="text" id="result" disabled />
+  </div>
+  <br />
+  <table id="calculator" border="solid black 1px" align="center">
+    <tr>
+      <td><input type="button" id="clearWindow" onclick="clearWindow()" value=" C" /></td>
+      <td><input type="button" id="delete" onclick="remove()" value="del" /></td>
+      <td><input type="button" id="squareRoot" onclick="insertOperator(this.value)" value=" &radic; " /></td>
+      <td><input type="button" id="divide" onclick="insertOperator(this.value)" value=" &#247; " /></td>
+    </tr>
+    <tr>
+      <td><input type="button" id="num1" onclick="insertNumber(this.value)" value=" 1 " /></td>
+      <td><input type="button" id="num2" onclick="insertNumber(this.value)" value=" 2 " /></td>
+      <td><input type="button" id="num3" onclick="insertNumber(this.value)" value=" 3 " /></td>
+      <td><input type="button" id="multiply" onclick="insertOperator(this.value)" value=" *  " /></td>
+    </tr>
+    <tr>
+      <td><input type="button" id="num4" onclick="insertNumber(this.value)" value=" 4 " /></td>
+      <td><input type="button" id="num5" onclick="insertNumber(this.value)" value=" 5 " /></td>
+      <td><input type="button" id="num6" onclick="insertNumber(this.value)" value=" 6 " /></td>
+      <td><input type="button" id="add" onclick="insertOperator(this.value)" value=" + " /></td>
+    </tr>
+    <tr>
+      <td><input type="button" id="num7" onclick="insertNumber(this.value)" value=" 7 " /></td>
+      <td><input type="button" id="num8" onclick="insertNumber(this.value)" value=" 8 " /></td>
+      <td><input type="button" id="num9" onclick="insertNumber(this.value)" value=" 9 " /></td>
+      <td><input type="button" id="subtract" onclick="insertOperator(this.value)" value=" -  " /></td>
+    </tr>
+    <tr>
+      <td><input type="button" id="changeSign" onclick="changeSign()" value="+/-" /> </td>
+      <td><input type="button" id="num0" onclick="insertNumber(this.value)" value=" 0 " /></td>
+      <td><input type="button" id="dec" onclick="insertOperator(this.value)" value=" .  " /></td>
+      <td><input type="button" id="enter" onclick="compute()" value=" = " /></td>
+    </tr>
+    <tr>
+    </tr>
+  </table>
+</div>
+<br />
+<div id="comments">
+  <p>
+    This example is a basic calculator that has the following functions: addition, subtraction, multiplication,
+    division. It also has a square root functionality that has yet to be implemented. This calculator
+    allows you to add numbers then operators, trying to add multiple operators with only replace the
+    current operator with the new selected operator. The result of the math equation is displayed in
+    the disabled result input.
+
+  </p>
+</div>
+
+</html>

@@ -13,13 +13,20 @@
   margin-right: auto;
 }
 
+#errorMsg{
+  color: red;
+  text-align: center;
+}
+
 </style>
+<script src="../js/calculator.js"></script>
 
 </head>
 
 <div id="container">
   <h2 style="text-align: center;">Calculator</h2>
   <br />
+  <div id="errorMsg"></div>
   <div style="text-align:center;">
     <label for="window">Calculate: </label>
     <input type="text" id="window" value="" />
@@ -33,32 +40,32 @@
     <tr>
       <td><input type="button" id="clearWindow" onclick="clearWindow()" value=" C" /></td>
       <td><input type="button" id="delete" onclick="remove()" value="del" /></td>
-      <td><input type="button" id="squareRoot" onclick="insertOperator(this.value)" value=" &radic; " /></td>
-      <td><input type="button" id="divide" onclick="insertOperator(this.value)" value=" &#247; " /></td>
+      <td><input type="button" id="squareRoot" onclick="squareRoot()" value=" &radic; " /></td>
+      <td><input type="button" id="divide" onclick="insertOperator(this.id)" value=" &#247; " /></td>
     </tr>
     <tr>
-      <td><input type="button" id="num1" onclick="insertNumber(this.value)" value=" 1 " /></td>
-      <td><input type="button" id="num2" onclick="insertNumber(this.value)" value=" 2 " /></td>
-      <td><input type="button" id="num3" onclick="insertNumber(this.value)" value=" 3 " /></td>
-      <td><input type="button" id="multiply" onclick="insertOperator(this.value)" value=" *  " /></td>
+      <td><input type="button" id="num1" onclick="insertNumber(this.value)" value=" 1 " ></td>
+      <td><input type="button" id="num2" onclick="insertNumber(this.value)" value=" 2 " ></td>
+      <td><input type="button" id="num3" onclick="insertNumber(this.value)" value=" 3 " ></td>
+      <td><input type="button" id="multiply" onclick="insertOperator(this.value)" value=" *  " ></td>
     </tr>
     <tr>
-      <td><input type="button" id="num4" onclick="insertNumber(this.value)" value=" 4 " /></td>
-      <td><input type="button" id="num5" onclick="insertNumber(this.value)" value=" 5 " /></td>
-      <td><input type="button" id="num6" onclick="insertNumber(this.value)" value=" 6 " /></td>
-      <td><input type="button" id="add" onclick="insertOperator(this.value)" value=" + " /></td>
+      <td><input type="button" id="num4" onclick="insertNumber(this.value)" value=" 4 " ></td>
+      <td><input type="button" id="num5" onclick="insertNumber(this.value)" value=" 5 " ></td>
+      <td><input type="button" id="num6" onclick="insertNumber(this.value)" value=" 6 " ></td>
+      <td><input type="button" id="add" onclick="insertOperator(this.value)" value=" + " ></td>
     </tr>
     <tr>
-      <td><input type="button" id="num7" onclick="insertNumber(this.value)" value=" 7 " /></td>
-      <td><input type="button" id="num8" onclick="insertNumber(this.value)" value=" 8 " /></td>
-      <td><input type="button" id="num9" onclick="insertNumber(this.value)" value=" 9 " /></td>
-      <td><input type="button" id="subtract" onclick="insertOperator(this.value)" value=" -  " /></td>
+      <td><input type="button" id="num7" onclick="insertNumber(this.value)" value=" 7 " ></td>
+      <td><input type="button" id="num8" onclick="insertNumber(this.value)" value=" 8 " ></td>
+      <td><input type="button" id="num9" onclick="insertNumber(this.value)" value=" 9 " ></td>
+      <td><input type="button" id="subtract" onclick="insertOperator(this.value)" value=" -  " ></td>
     </tr>
     <tr>
-      <td><input type="button" id="changeSign" onclick="changeSign()" value="+/-" /> </td>
-      <td><input type="button" id="num0" onclick="insertNumber(this.value)" value=" 0 " /></td>
-      <td><input type="button" id="dec" onclick="insertOperator(this.value)" value=" .  " /></td>
-      <td><input type="button" id="enter" onclick="compute()" value=" = " /></td>
+      <td><input type="button" id="changeSign" onclick="changeSign()" value="+/-" ></td>
+      <td><input type="button" id="num0" onclick="insertNumber(this.value)" value=" 0 " ></td>
+      <td><input type="button" id="dec" onclick="insertOperator(this.value)" value=" .  " ></td>
+      <td><input type="button" id="enter" onclick="compute()" value=" = " ></td>
     </tr>
     <tr>
     </tr>
